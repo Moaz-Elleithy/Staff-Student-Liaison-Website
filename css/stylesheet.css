@@ -1,0 +1,852 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    position: relative;
+    min-height: 100vh;
+}
+/* --------------Images--------------- */
+#doublePhoto{
+    margin-top: 2em;
+}
+#fig1{
+    margin-top: 1em;
+}
+#fig2{
+    margin-top: 1em;
+   margin-bottom: 1em;
+}
+#SSCLphoto{
+  height: 50%;
+  width: 100%;
+}
+figcaption{
+    color: #4b4646;
+}
+#SSCLphoto2{
+    height: 10%; 
+    width: 100%;
+}
+#UniLogo{
+    float: left;
+    height: 69px;
+    margin-top: -5px;
+    box-shadow: none; 
+}
+img{
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+/* -------------Navigation bar--------------- */
+#mainnav{
+    
+    position: sticky;
+    top: 0;
+    background-color: #4a05aa;
+    height: 80px;
+    width: 100%;
+}
+#mainnav ul{
+    margin-top: 10px;
+    padding-left: 5px;
+    line-height: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#mainnav ul li{
+    display: inline-block;  
+    padding-right: 8px;
+}
+#mainnav ul li a{
+    color: #b7b5b5;
+}
+.homeHeader{
+    color: #f9f9f9;
+    text-align: center;
+}
+/* ----------the main part below the nav bar----------- */
+main{
+    margin: 20px 10px;
+    max-width: 100%;
+}
+#HomeHeader{
+    font-size: 1.5em;
+}
+/* ---------------------header--------------- */
+.mainHeader{
+    color: #676767;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+/* ---------------text information for homepage----------------- */
+p{
+    line-height: 1.3;
+}
+.text{
+    font-size: 1.2em;
+    color: #676767;
+}
+.text ul{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.text ul li {
+    padding-bottom: 3%;
+    list-style-type: square ;
+    color: rgb(27, 26, 26);
+}
+.text ul li span{
+    color: #676767;
+}
+.text2{
+    margin-top: 3%;
+}
+.text2 a:link{
+    text-decoration: underline;
+    color: #4a05aa;
+}
+.text2 a:visited{
+    text-decoration: underline;
+    color: #b7b5b5;
+}
+/* ---------------------Footer----------------------------------- */
+#footernav{
+    background-color: black;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+#footernav ul{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footernav ul li{
+    display: inline-block; 
+}
+#footernav ul li a{
+    color: #b7b5b5;
+    font-size: 0.8em;
+    padding: 0.4375em 0.2125em;
+    border-radius: 0.1875em;
+    text-transform: uppercase;
+    transition: color 0.5s, background-color 0.5s;
+}
+#footernav a:hover{
+    color:#ffffff;
+    background-color: #4a05aa;
+    transition: color 0.5s, font-size 0.5s, background-color 0.5s;
+}
+#Author{
+    color: #b7b5b5;
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 75%;
+}
+/* --------------About Us----------------- */
+.Headers{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4a05aa;
+    border-bottom: #4a05aa 5px solid;
+    padding-bottom: 0.2em;
+    width: max-content;
+}
+#secondlist{
+    margin-left: 2%;
+}
+#QuizHeader{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;   
+}
+#test{
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#QuizImg3{
+    width: 90%;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+#QuizImg2{
+    width: 90%;
+    margin-top: 2em;
+}
+#QuizImg1{
+    width: 90%;
+    margin-top: 2em;
+}
+ol{
+    list-style-type: decimal;
+    margin-left: 1em;  
+}
+ol li{   
+    font-size: 1.2em;
+}
+.parting{
+    border: #6e2acf 2px solid;
+    width: 90%;
+    left: 0; 
+}
+.testAnswers{
+    list-style-type: upper-alpha;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+}
+.rightChoices{
+    margin-top: 0.5em;
+}
+.wrongChoices{
+    margin-top: 0.5em;
+}
+.rightChoices a{
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+.wrongChoices a{
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+.testAnswers .rightChoices a:hover{
+    background-color: rgb(150, 255, 150);
+}
+.testAnswers .wrongChoices a:hover{
+    background-color: rgb(255, 109, 109);
+}
+.LastThing{
+    padding-bottom: 2em;
+}
+/*----------------------Members--------------------*/
+#MembersMain .text ul{
+    padding-left: 2%;
+}
+#MembersMain .text ul li a span{
+    border-bottom: 2px solid black;
+    color: black;
+}
+#MembersMain .text ul li a:visited span{
+    text-decoration: none;
+    border-bottom: 2px solid #f9f9f9
+}
+.MembersIndex{
+    margin-top: 4%;
+}
+.MembersIndex a:link{
+    border-bottom: 2px solid #4a05aa;
+    color: #4a05aa;
+    font-weight: 700;
+}
+.MembersIndex a:visited{
+    color: #4a05aa;
+    border-bottom: 2px solid #f9f9f9;
+}
+#Undergraduates{   
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+.MembersSections{
+    padding-top: 0.5em;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+#MembersList ul li{
+    padding: 0.5em 0em;
+}
+#MembersList ul li span{
+    color: #676767;
+}
+#Postgraduates{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+#Other{
+    font-size: 1.5em;
+}
+#StaffMembership{
+    font-size: 1.5em;
+}
+/*----------------------Agenda---------------------*/
+#Forthcoming{
+    margin-top: 0.5em;
+    font-size: 1.3em;
+}
+#MeetingsSubHeader{
+    font-size: 1.1em;
+}
+#Agenda{
+    font-size: 1.3em;
+}
+#Item{
+    color: black;
+}
+#RaisedBy{
+    color: black;
+}
+td{
+    padding-top: 1em;
+    text-align: center;
+}
+.items{
+    padding-right: 2em;
+}
+table{ 
+    margin-left: auto;
+    margin-right: auto;
+}
+/*----------------------Contact--------------------*/
+#ContactHeader{
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+}
+#ContactMain a:link{
+    color: #4a05aa;
+    text-decoration: underline;
+}
+#FormHeader{
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+}
+.FormSubHeaders{
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+}
+#ContactMain ul{
+    padding-left: 2%;
+}
+#Form{
+    display: block;
+    text-align: center;
+}
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 1em;
+}
+.FormBox{
+    background-color: #dccbf5;
+    height: 40px;
+    margin-bottom: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    width: 100%;
+}
+#comments{
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: #dccbf5;
+    outline: 1px solid #777;
+    padding: 0.5em;
+    border-radius: 5px;
+    outline-offset: -2px;
+}
+input[type="submit"]:hover {
+    background-color: #b795eb;
+}
+input[type="reset"] {
+    background-color: #dccbf5;
+    outline: 1px solid #777;
+    padding: 0.5em;
+    border-radius: 5px;
+    outline-offset: -2px;
+}
+input[type="reset"]:hover {
+    background-color: #b795eb;
+}
+/*---------------------Accessibility------------------------*/
+#AccessibilityHeader1{
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.FromMoaz{
+    margin-top: 1em;
+    font-weight: 700;
+    color: black;
+}
+.AccessibilityHeaders{
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0.5em 0em;
+    color: #4a05aa;
+    text-decoration: underline;
+}
+#AccessibilityMain ol{
+    margin-top: 0.5em;
+}
+#AccessibilityMain ol li{
+    font-size: 1em;
+}
+#AccessibilityHeader2{
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/*----------------------Legal------------------------*/
+#LegalHeader1{
+    font-size: 1.5em;
+}
+/*---------------------Design------------------*/
+#DesignHeader1{
+    font-size: 1.5em;
+}
+#SiteMapImg{
+    width: 100%;
+}
+#MobileDesign{
+    width: 40%;
+    float: left;
+}
+#NarrowDesign{
+    width: 57%;
+    float: right;
+}
+#DesktopDesign{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#DesignMain span{
+    font-weight: 600;
+    color: black;
+} 
+.MainLayout .FooterTemp .AccessibilityHeaders{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.MainLayout .FooterTemp p{
+    margin-bottom: 0.5em;
+}
+#Reasoning{
+    float: left;
+}
+/*---------------------Testing-----------------------*/
+#TestingHeader1{
+    font-size: 1.5em;
+}
+#ChromePhone{
+    width: 50%;
+    float: left;
+}
+#EdgePhone{
+    width: 50%;
+    float: right;
+}
+#ChromeTablet{
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#EdgeTablet{
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#LeftText{
+    float: left;
+    margin-top: 1em;
+}
+/* portrait tablets, large phones */
+@media screen and (min-width: 390px){
+main{
+    flex-direction: row;
+}
+}
+@media screen and (min-width: 526px){
+/*------------------------------Contact-----------------*/
+.FormBox{
+    width: 400px;
+}
+}
+@media screen and (min-width: 560px){
+#UniLogo{
+    margin-top: -5px;
+}
+#mainnav ul{
+    margin-top: -5px;
+    padding-left: 0px;
+    width: 100%;  
+}
+.homeHeader{
+    margin-top: 0.7em;
+}
+}  
+/* large phones and tablets */
+@media screen and (min-width: 606px) and (max-width: 1499px){
+
+main{
+    flex-direction: row;
+}
+#fig1{
+    margin-right: 2em;        
+}
+#fig2{
+    margin-right: 2em;
+}
+#mainnav ul{
+    margin-top: 0px;
+    padding-left: 0px;  
+}
+#mainnav ul li{
+    padding-left: 0px;
+}
+#UniLogo{
+    height: 100px;
+    margin-top: -20px; 
+}
+.homeHeader{
+    margin-top: 0.5em;
+    margin-right: 2em;
+}
+#HomeMain{
+    margin-top: 3em;
+}
+/*------------------------About Us-------------------------- */
+.Headers{   
+    margin-top: 1em;  
+}
+#secondlist{
+    margin-left: 3%;
+}
+#test{
+    text-align: center;
+}
+}
+@media screen and (min-width: 658px) {
+  
+#mainnav ul{
+    margin-top: 23px;    
+}
+#mainnav ul li{
+    padding-left: 0px;
+}
+#UniLogo{
+    margin-top: -15px;
+    height: 82px; 
+}
+/*----------------------About Us--------------------*/    
+.Headers{   
+    margin-top: 1em;   
+}
+/*-----------------------Agenda-------------*/
+table{
+    padding-right: 2em;
+}
+}
+@media screen and (min-width: 810px){
+/*-----------------------Agenda-------------*/
+table{
+    padding-right: 5em;
+}
+/*-----------------------Accessibility------------------*/
+#AccessibilityHeader1{
+    font-size: 1.5em;
+    width: 100%;
+}
+#AccessibilityHeader2{
+    font-size: 1.5em;
+}
+}
+/* laptops/desktops */
+@media screen and (min-width: 992px){
+#UniLogo{
+    height: 90px;
+}
+.homeHeader{
+    margin-top: 1em;
+    margin-right: 2em;
+}
+/*-----------------------------Agenda---------------*/
+table{ 
+    padding-right: 8em;
+}
+/*-----------------------------Contact----------------*/
+.FormSubHeaders{
+    padding-left: 3%;
+    padding-top: 1%;
+    margin-bottom: -2%;
+}
+}
+@media screen and (min-width: 1200px){
+#HomeMain{
+    margin-top: 1em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+.text {
+    margin-bottom: 2em;
+    width: 100%;
+}
+.text ul{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.text ul li {
+    padding-bottom: 1%;
+}
+#text2{
+    margin-top: 0.5em;
+}
+  #fig1{
+    margin-top: 0.5em;
+    float: right;
+     width: 42%;  
+     margin-right: 5em; 
+}
+#fig2{
+    margin-top: 0.5em;
+    float: left;
+    width: 38%;
+    margin-left: 5em; 
+    margin-bottom: 2em;
+}
+#footernav ul li a{
+    font-size: 1em;
+    padding: 0em 0em;
+}
+#Author{
+    font-size: 80%;
+    padding: 0px 0px;
+}
+#mainnav{
+    height: 4em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#mainnav ul{
+    background-color: transparent;
+    padding-top: 1.7%;
+    padding-left: 57%;
+    position: relative;
+    top: -4.2em;
+    line-height: 0;
+    margin-top: 0px;
+}
+#mainnav ul li{
+    padding-right: 0%;
+}
+#mainnav ul li a{
+    font-size: 1em;
+    padding: 0.4375em 0.8125em;
+    border-radius: 0.1875em;
+    text-transform: uppercase;
+    transition: color 0.5s, font-size 0.5s, background-color 0.5s;
+}
+#mainnav a:hover{
+    color:#ffffff;
+    background-color: black;
+}
+#UniLogo{
+    float: left;
+    height: 6.25em;
+    margin-top: -1.1875em;  
+}
+.homeHeader{
+    padding-right: 50%;
+    margin-top: 0.2em;
+}
+/*----------------------About Us--------------*/    
+#AboutUsMain{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#AboutUsText{
+    margin-top: 2em;
+   
+}
+.Headers{
+    margin-top: 0em; 
+}
+#LastTestAnswer{
+    margin-bottom: 2em;
+}
+/*---------------------Membership-------------------  */    
+#MembersMain .text ul{
+    margin-left: 4.5em;
+}
+#MembersList ul li{
+    margin-left: 2.5em;
+}
+.MembersSections{
+    margin-left: 5em;
+    margin-top: 1.5em;
+}
+.MembersIndex{
+    margin-left: 2em;
+}
+#Postgraduates1{
+    margin-left: 4em;
+}
+#Other{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+#StaffMembership{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+/*-------------------------Agenda---------------*/
+table{ 
+    padding-right: 11em;
+}
+#Agenda{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+#AgendaList ul{
+    padding-left: 4.5em;
+}
+/*--------------------------Contact----------------*/
+.FormSubHeaders{
+    padding-left: 3%;
+    padding-top: 1%;
+    margin-bottom: 0%;
+}
+/*-----------------------Accessibility----------------*/
+#AccessibilityMain{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+#AccessibilityHeader1{
+    width: max-content;
+}
+/*--------------------------Legal-------------*/
+#LegalMain{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+/*--------------------------Design--------------*/
+#DesignMain{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#MobileDesign{
+    width: 25%;
+    float: left;
+}
+#NarrowDesign{
+    width: 35%;
+    float: left;
+}
+#DesktopDesign{
+    width: 40%;
+}
+/*------------------------------Testing--------------*/
+#TestingMain{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#ChromePhone{
+    margin-left: 12em;
+    float: none;
+    width: 30%;
+}
+#EdgePhone{  
+    float: none;
+    width: 30%;
+}
+#ChromeTablet{
+    width: 40%;
+    margin-right: 0em;
+    margin-top: 2em;
+    margin-left: -20em;
+    float: left;
+}
+#EdgeTablet{
+    width: 40%;
+    margin: 0;
+    margin-top: 2em;
+    margin-right: 3em;
+    float: right;
+}
+}
+@media screen and (min-width: 1317px){
+.homeHeader{
+    padding-right: 45%;
+    margin-top: 0.8em;
+}
+}
+/* large-laptops and desktops */
+@media screen and (min-width: 1464px){
+#mainnav ul{
+    position: relative;
+    top: -4.5em;
+}
+/*------------------------------Contact---------------*/
+.FormSubHeaders{
+    padding-left: 4%;
+    padding-top: 1%;
+}
+}
+@media screen and (min-width: 1500px){
+#test{
+    text-align: center;
+}
+/*------------------------AboutUs------------*/
+#Questions{
+    margin-left: 7em;
+    margin-right: 7em;
+}  
+/*--------------------------Testing---------------*/
+#ChromePhone{
+   width: 20%;
+}
+#EdgePhone{  
+    width: 20%;
+    margin-right: 5em;
+    margin-left: 15em;
+}
+#ChromeTablet{
+    width: 30%;
+    
+    margin-left: -15em;
+}
+#EdgeTablet{
+    width: 30%;  
+    margin-right: 15em;
+}
+}
+@media screen and (min-width: 1695px){
+    #LastHeader{
+        display: block;
+        margin-top: 40em;
+    }
+}
+@media screen and (min-width: 1903px){
+#LastHeader{
+    margin-top: 45em;
+    }
+}
